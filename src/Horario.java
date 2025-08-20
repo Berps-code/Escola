@@ -5,6 +5,7 @@ public class Horario {
     private int horaFim;
     private int diaSemana;
     private HashMap<Integer, String> diasDaSemana;
+    private Turma turma;
 
     public Horario(int horaInicio, int horaFim, int diaSemana) {
         if (horaFim>horaInicio && (horaInicio >= 7 && horaInicio < 24) && (horaFim >= 7 && horaFim < 24)) {

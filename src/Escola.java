@@ -17,4 +17,20 @@ public class Escola {
     public String getNome() {
         return nome;
     }
+
+    public void adicionarprofessor(Professor p){
+        if (professores.contains(p)) {
+            System.out.println("Este professor já existe nesta escola\n");
+            return;
+        }
+        else {
+            professores.add(p);
+            p.adicionarEscola(this);
+            System.out.println("Professor adicionado com sucesso\n");
+        }
+    }
+
+    public void listaProfessores(){
+        
+    }
 }

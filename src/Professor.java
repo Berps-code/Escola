@@ -28,5 +28,17 @@ public class Professor {
         return siape;
     }
 
+    public void adicionarEscola(Escola e){
+        if (escolas.contains(e)) {
+            System.out.println("O professor já leciona nesta escola\n");
+            return;
+        }
+
+        else {
+            escolas.add(e);
+            e.adicionarprofessor(this);
+            System.out.println("Escola adicionada com sucesso\n");
+        }
+    }
     
 }

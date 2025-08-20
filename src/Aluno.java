@@ -7,10 +7,11 @@ public class Aluno {
     private Escola escola;
     private List<Turma> turmas;
 
-    public Aluno (String matricula, String nome){
+    public Aluno (String matricula, String nome, Escola escola){
         this.matricula = matricula;
         this.nome = nome;
         this.turmas = new ArrayList<>();
+        this.escola = escola;
     }
 
     public String getMatricula() {

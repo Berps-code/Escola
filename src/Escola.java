@@ -7,9 +7,14 @@ public class Escola {
     private List<Professor> professores;
     private List<Sala> salas;
 
-    public Escola (String nome){
+    public Escola (String nome, List<Professor> professores){
         this.nome = nome;
         this.alunos = new ArrayList<>();
+
+        if (professores.isEmpty() || professores == null) {
+            throw new IllegalArgumentException("Deve haver pelo menos 1 professor na escola\n"); 
+        }
+        
         this.professores = new ArrayList<>();
         this.salas = new ArrayList<>();
     }

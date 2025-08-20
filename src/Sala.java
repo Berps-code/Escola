@@ -8,11 +8,12 @@ public class Sala {
     private Escola escola;
     private List<Turma> turmas;
     
-    public Sala(int numero, int capacidadeSala, int numeroTurmasAlocadas) {
+    public Sala(int numero, int capacidadeSala, int numeroTurmasAlocadas, Escola escola) {
         this.numero = numero;
         this.capacidadeSala = capacidadeSala;
         this.numeroTurmasAlocadas = numeroTurmasAlocadas;
         this.turmas = new ArrayList<>();
+        this.escola = escola;
     }
 
     public int getNumero() {
@@ -26,6 +27,6 @@ public class Sala {
     public int getNumeroTurmasAlocadas() {
         return numeroTurmasAlocadas;
     }
-
+    
     
 }

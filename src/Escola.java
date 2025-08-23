@@ -36,6 +36,9 @@ public class Escola {
     }
 
     public void listaProfessores(){
-        
+        System.out.println("Professores:");
+        for (Professor p : professores){
+            System.out.println("\n" + p.getNome());
+        }
     }
 }
